@@ -18,7 +18,7 @@ class Artist
 
     @genres << genre
     @songs << song
-    binding.pry 
+    # binding.pry 
   end 
   
   def genres
