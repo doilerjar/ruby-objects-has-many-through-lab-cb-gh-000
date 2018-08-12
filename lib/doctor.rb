@@ -1,3 +1,5 @@
+require 'pry'
+
 class Doctor
   @@all = []
   
@@ -12,6 +14,7 @@ class Doctor
   
   def new_appointment(date, patient)
     Appointment.new(date, patient, self)
+    binding.pry
   end 
   
   def appointments
