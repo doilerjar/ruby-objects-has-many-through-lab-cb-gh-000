@@ -20,10 +20,7 @@ class Artist
   end 
   
   def genres
-    result = @songs.collect do |song|
-      song.genre
-    end
-    @genres = result.uniq
+    songs.collect { |song| song.genre }
   end
   
   def self.all
