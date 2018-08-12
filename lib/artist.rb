@@ -21,6 +21,10 @@ class Artist
     # binding.pry 
   end 
   
+  def songs
+    
+  end 
+  
   def genres
     result = @songs.collect do |song|
       song.genre
