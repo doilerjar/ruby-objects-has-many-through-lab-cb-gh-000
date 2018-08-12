@@ -19,7 +19,7 @@ class doctor
   end 
   
   def patients
-    Patients.all.select { |patient|  }
+    Appointment.all.collect { |appointment| ?  }
   end 
   
   def all
