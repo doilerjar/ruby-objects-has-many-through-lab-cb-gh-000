@@ -21,6 +21,13 @@ class Artist
     binding.pry 
   end 
   
+  def genres
+    result = @songs.collect do |song|
+      song.genre
+    end
+    @genres = result.uniq
+  end
+  
   def self.all
     @@all
   end
