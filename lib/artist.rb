@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist
   @@all = []
   
@@ -13,6 +15,7 @@ class Artist
   
   def new_song(song_name, genre)
     song = Song.new(song_name, self, genre)
+    binding.pry 
     @genres << genre
     @songs << song
   end 
